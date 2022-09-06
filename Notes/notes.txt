@@ -1,4 +1,16 @@
+Active Job is a framework for declaring jobs and making them run on a variety of queueing backends.
 
+******************************
+Active Job is an interface to queueing backends such as sidekiq, delayed_job or resque.
+ It's simply a way for you to write background jobs where you don't have to care about which of the queueing backends will be used.
+
+
+******************************
 
 rails g job first_job
 
+*****************************
+
+gem 'sidekiq'
+
+ config.active_job.queue_adapter = :sidekiq

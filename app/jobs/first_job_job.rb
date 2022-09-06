@@ -3,5 +3,7 @@ class FirstJobJob < ApplicationJob
 
   def perform(*args)
     # Do something later
+    sleep 5
+    puts "hello"
   end
 end
