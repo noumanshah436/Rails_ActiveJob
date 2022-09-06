@@ -1,0 +1,3 @@
+before 5.X rails uses sprockets for managing the assets.
+
+Rails 6 uses webpacker 

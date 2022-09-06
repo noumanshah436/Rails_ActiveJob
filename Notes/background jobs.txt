@@ -12,11 +12,13 @@ rails g job first_job
 GuestsCleanupJob.set(wait: 5.seconds).perform_later(2)
 
 *****************************
+
 Sidekiq is a Ruby Background Processor that manages its queue with a Redis service. Learn the basics of Sidekiq and integrating it with ActiveJob
 
 1) gem 'sidekiq'
+   bundle
 
-2)
+2) config/application.rb:
 config.active_job.queue_adapter = :sidekiq
 config.active_job.queue_adapter =  Rails.env.production? ? :sidekiq : :async
 
@@ -32,8 +34,16 @@ config.active_job.queue_adapter =  Rails.env.production? ? :sidekiq : :async
 7) run rails server in production:
     rails s -e production
 
+8) http://localhost:3000/sidekiq
+
+
 https://www.youtube.com/watch?v=CStZg8ql9Vs
 https://www.digitalocean.com/community/questions/how-to-run-rails-server-in-production-mode
+
+9) rake db:migrate RAILS_ENV=production
+
+https://stackoverflow.com/questions/4909831/rake-dbmigrate-doesnt-seem-to-work-in-production
+
 
 *********************
 
