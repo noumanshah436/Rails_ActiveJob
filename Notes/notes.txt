@@ -9,6 +9,8 @@ Active Job is an interface to queueing backends such as sidekiq, delayed_job or 
 
 rails g job first_job
 
+GuestsCleanupJob.set(wait: 5.seconds).perform_later(2)
+
 *****************************
 Sidekiq is a Ruby Background Processor that manages its queue with a Redis service. Learn the basics of Sidekiq and integrating it with ActiveJob
 
