@@ -1,0 +1,4 @@
+
+
+rails g job first_job
+
