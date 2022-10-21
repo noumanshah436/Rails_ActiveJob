@@ -46,6 +46,18 @@ https://stackoverflow.com/questions/4909831/rake-dbmigrate-doesnt-seem-to-work-i
 
 
 *********************
+Background Processing with Rails, Redis and Sidekiq
+https://www.youtube.com/watch?v=GBEDvF1_8B8
+
+*********************
+https://stackoverflow.com/questions/32947076/redis-server-in-ubuntu14-04-bind-address-already-in-use
+
+stop server is redis not worK:
+
+sudo service redis-server stop
+
+redis-server
+*********************
 
 gem 'faker'
 

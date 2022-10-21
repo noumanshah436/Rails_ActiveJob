@@ -18,3 +18,12 @@ class HomeController < ApplicationController
   end
 
 end
+
+
+#   sleep(5.seconds)
+
+# sleep(5.minutes)
+
+# sleep(5.hours)
+
+# sleep(5.days)
